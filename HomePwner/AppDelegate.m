@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XCFItemsViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    XCFItemsViewController *itemsViewController = [[XCFItemsViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:itemsViewController];
+    self.window.rootViewController = navController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    NSLog(@"%@",NSHomeDirectory());
     return YES;
 }
 
