@@ -11,5 +11,4 @@
 @interface XCFTwoTableViewCell : UITableViewCell
 @property (nonatomic, strong) WeiBoItem *weiBoItem;
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
 @end

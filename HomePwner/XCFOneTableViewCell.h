@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) WeiBoItem *weiBoItem;
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
 
 
 @end

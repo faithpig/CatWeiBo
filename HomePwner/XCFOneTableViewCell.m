@@ -34,18 +34,10 @@
     // Configure the view for the selected state
 }
 
-+(instancetype) cellWithTableView:(UITableView *)tableView{
-    static NSString *identifier = @"XCFOneTableViewCell";
-    XCFOneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[XCFOneTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-   return cell;
-}
-
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self){
+//        self.backgroundColor = [UIColor colorWithRed:arc4random()%100/100.f green:arc4random()%100/100.f blue:arc4random()%100/100.f alpha:arc4random()%100/175.f];
         self.title = [[UILabel alloc] init];
         self.content = [[UILabel alloc] init];
         self.image= [[UIImageView alloc] init];

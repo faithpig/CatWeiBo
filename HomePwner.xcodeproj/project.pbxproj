@@ -29,6 +29,9 @@
 		248FF7091F14DB45004AA7F5 /* XCFTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FF7081F14DB45004AA7F5 /* XCFTwoTableViewCell.m */; };
 		24B64FE31F17621F00682ADE /* XCFDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B64FE21F17621F00682ADE /* XCFDetailController.m */; };
 		24B64FE71F17625700682ADE /* XCFDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B64FE61F17625700682ADE /* XCFDetailView.xib */; };
+		24E9C6781F39B5B40021731B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9C6731F39B5B40021731B /* CollectionViewCell.m */; };
+		24E9C6791F39B5B40021731B /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9C6751F39B5B40021731B /* MyCollectionViewController.m */; };
+		24E9C67A1F39B5B40021731B /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9C6771F39B5B40021731B /* MyLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +82,12 @@
 		24B64FE11F17621F00682ADE /* XCFDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFDetailController.h; sourceTree = "<group>"; };
 		24B64FE21F17621F00682ADE /* XCFDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFDetailController.m; sourceTree = "<group>"; };
 		24B64FE61F17625700682ADE /* XCFDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFDetailView.xib; sourceTree = "<group>"; };
+		24E9C6721F39B5B40021731B /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = HomePwner/CollectionViewCell.h; sourceTree = "<group>"; };
+		24E9C6731F39B5B40021731B /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = HomePwner/CollectionViewCell.m; sourceTree = "<group>"; };
+		24E9C6741F39B5B40021731B /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewController.h; path = HomePwner/MyCollectionViewController.h; sourceTree = "<group>"; };
+		24E9C6751F39B5B40021731B /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewController.m; path = HomePwner/MyCollectionViewController.m; sourceTree = "<group>"; };
+		24E9C6761F39B5B40021731B /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLayout.h; path = HomePwner/MyLayout.h; sourceTree = "<group>"; };
+		24E9C6771F39B5B40021731B /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLayout.m; path = HomePwner/MyLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,12 @@
 		243794C11F132B5600248E7C = {
 			isa = PBXGroup;
 			children = (
+				24E9C6721F39B5B40021731B /* CollectionViewCell.h */,
+				24E9C6731F39B5B40021731B /* CollectionViewCell.m */,
+				24E9C6741F39B5B40021731B /* MyCollectionViewController.h */,
+				24E9C6751F39B5B40021731B /* MyCollectionViewController.m */,
+				24E9C6761F39B5B40021731B /* MyLayout.h */,
+				24E9C6771F39B5B40021731B /* MyLayout.m */,
 				243794CC1F132B5600248E7C /* HomePwner */,
 				243794CB1F132B5600248E7C /* Products */,
 			);
@@ -256,6 +271,7 @@
 				248FF6EF1F146E1C004AA7F5 /* MASLayoutConstraint.m in Sources */,
 				248FF6F91F14732C004AA7F5 /* WeiBoBuilder.m in Sources */,
 				248FF6ED1F146E1C004AA7F5 /* MASConstraint.m in Sources */,
+				24E9C6781F39B5B40021731B /* CollectionViewCell.m in Sources */,
 				248FF6F31F146E1C004AA7F5 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				248FF6EC1F146E1C004AA7F5 /* MASCompositeConstraint.m in Sources */,
 				243794D21F132B5600248E7C /* AppDelegate.m in Sources */,
@@ -265,6 +281,8 @@
 				248FF7091F14DB45004AA7F5 /* XCFTwoTableViewCell.m in Sources */,
 				248FF6F51F146E1C004AA7F5 /* ViewController+MASAdditions.m in Sources */,
 				24B64FE31F17621F00682ADE /* XCFDetailController.m in Sources */,
+				24E9C67A1F39B5B40021731B /* MyLayout.m in Sources */,
+				24E9C6791F39B5B40021731B /* MyCollectionViewController.m in Sources */,
 				248FF6F11F146E1C004AA7F5 /* MASViewConstraint.m in Sources */,
 				243794CF1F132B5600248E7C /* main.m in Sources */,
 				248FF6F01F146E1C004AA7F5 /* MASViewAttribute.m in Sources */,

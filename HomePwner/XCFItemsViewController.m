@@ -14,6 +14,8 @@
 #import "Masonry.h"
 #import "XCFTwoTableViewCell.h"
 #import "XCFDetailController.h"
+#import "MyCollectionViewController.h"
+#import "MyLayout.h"
 
 
 @interface XCFItemsViewController ()<UITableViewDelegate>
@@ -35,22 +37,8 @@
     return self;
 }
 
--(instancetype)initWithStyle:(UITableViewStyle)style{
-    return [self init];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    [self.tableView registerClass:[XCFOneTableViewCell class] forCellReuseIdentifier:@"XCFOneTableViewCell"];
-    [self.tableView registerClass:[XCFTwoTableViewCell class] forCellReuseIdentifier:@"XCFTwoTableViewCell"];
-    [self.navigationController setToolbarHidden:NO animated:YES];
-    UIBarButtonItem *takephoto = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(takephoto:)];
-    UIBarButtonItem *jiange = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(add:)];
-    
-    [self setToolbarItems:[NSArray arrayWithObjects:takephoto,jiange,add,nil]];
-    
 }
 
 -(void)add:(id) sender{
@@ -58,13 +46,23 @@
 }
 
 -(void)takephoto:(id)sender{
-    
+    MyCollectionViewController *viewController = [[MyCollectionViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:NO];
 }
 
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.tableView reloadData];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    [self.tableView registerClass:[XCFOneTableViewCell class] forCellReuseIdentifier:@"XCFOneTableViewCell"];
+    [self.tableView registerClass:[XCFTwoTableViewCell class] forCellReuseIdentifier:@"XCFTwoTableViewCell"];
+    [self.navigationController setToolbarHidden:NO animated:NO];
+    UIBarButtonItem *takephoto = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(takephoto:)];
+    UIBarButtonItem *jiange = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(add:)];
+    
+    [self setToolbarItems:[NSArray arrayWithObjects:takephoto,jiange,add,nil]];
 }
 
 - (void)didReceiveMemoryWarning {

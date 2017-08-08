@@ -26,10 +26,6 @@
     self.xcftitle.enabled = NO;
     self.xcfcontent.enabled = NO;
     self.imgView.image = [UIImage imageNamed:self.item.image];
-    UIBarButtonItem *takephoto = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:nil];
-    UIBarButtonItem *jiange = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:nil];
-    [self setToolbarItems:[NSArray arrayWithObjects:takephoto,jiange,add,nil]];
 }
 
 - (void)viewDidLoad {
